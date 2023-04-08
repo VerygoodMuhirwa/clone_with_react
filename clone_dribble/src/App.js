@@ -3,21 +3,22 @@ import { BiSearch} from 'react-icons/bi'
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 import {  Link} from 'react-router-dom'
 import FirstPage from './firstpage';
+import HomePage from './homePage';
 // import FirstPage from './firstpage';
 function App() {
 // This is the function to take the user to the homepage
-const takeToHomepage= (e)=>{
-  e.preventDefault()
-  window.location.href="./homePage.js"
-}
+// const takeToHomepage= (e)=>{
+//   e.preventDefault()
+// window.location.href= "./homePage.js"
+// }
 
   return (
 
     <div className="App">
-       <nav>
-        <Router>
+      <div className='nav'>
+      <Router>
                 <li className='dribble' >dribbble</li>
-                <a href='/homePage' onClick={takeToHomepage}>Home</a>
+<li><Link to="/homepage" style={{textDecoration:"none",color:"black"}}>Home</Link></li>
              <li ><Link to="#" style={{textDecoration:'none', color:'black'}}>Inspiration</Link></li>
         <li ><Link to="#" style={{textDecoration:'none', color:'black'}}>Find work</Link></li>
         <li ><Link to="#" style={{textDecoration:'none', color:'black'}}>Learn Design</Link></li>
@@ -27,10 +28,14 @@ const takeToHomepage= (e)=>{
 <p id='signin'>Sign in </p>
 <button className='signup'>Sign up</button>
 <Routes >
-<Route path=''   />
+<Route  path='/homepage' element={<HomePage />}   />
 </Routes>
 </Router>
-      </nav>
+
+      </div>
+       
+ 
+  
      
     {/* This is another div about the buttons linking to different pages */}
     <div className='buttons'>

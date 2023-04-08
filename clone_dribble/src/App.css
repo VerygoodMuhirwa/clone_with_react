@@ -3,13 +3,13 @@ background: url("./background.png");
 height: fit-content;
 }
 
-nav{
+.nav{
   display: flex;
   background-color: white;
 }
-.App nav .dribble{margin-left: none;}
+.App  .dribble{margin-left: none;}
 
-.App nav li{
+.App .nav li{
   list-style: none;
   /* margin-left: em; */
   margin-top: 0.7em;
@@ -19,7 +19,7 @@ nav{
 
 
 
-nav li:nth-of-type(1){
+.nav li:nth-of-type(1){
   list-style: none;
   margin-top: 0.7em;
   font-weight: bold;
@@ -65,7 +65,7 @@ nav li:nth-of-type(1){
   margin-top: 2em;
 }
 
-.App nav a{
+.App .nav a{
   color: black;
   text-decoration: none;
   margin-top: 0.7em;
@@ -148,3 +148,7 @@ margin-right: 0;
 margin-top: 3em;
 }
 h4{color: white;}
+
+.homLinks a{
+  color: yellow;
+}

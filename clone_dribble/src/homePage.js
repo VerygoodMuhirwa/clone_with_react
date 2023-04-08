@@ -1,5 +1,5 @@
 import { BiSearch } from "react-icons/bi"
-import {myImage} from '/verygood.jpg'
+// import {myImage} from '/verygood.jpg'
 export default function HomePage (){
     return (
         <div className="homLinks">
@@ -13,8 +13,9 @@ export default function HomePage (){
 {/* button for search */}
 <button>{<BiSearch />}</button>
 <input name="search" placeholder="Search" />
-< img src={<myImage />} />
+{/* < img src={<myImage />} /> */}
 <button >Upload</button>
+<h2>Hello worldd</h2>
 </nav>
         </div>
     )
